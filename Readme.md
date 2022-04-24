@@ -6,6 +6,10 @@
 
 It takes me countless hours to prepare and document my projects. [You can support me by reading/recommending my books.](https://p3dt.net/books.html) Thank you!
 
+## License
+
+See `License` file. GPLv3.
+
 ## Introduction
 
 This is a project to build a DIY PID controlled hotplate. This includes a python script to create a temperature chart and a tiny PCB to extend a TTGO 1.3" OLED shield as a controller.
