@@ -1,6 +1,6 @@
 # SMD Soldering Station / Hotplate
 
-**WARNING! If you no experience wiring mains, do not proceed with this project. USE THIS INFORMATION YOUR OWN RISK!!**
+**WARNING! If you have no experience wiring mains, do not proceed with this project. USE THIS INFORMATION YOUR OWN RISK!!**
 
 ## Support my projects ❤️
 
