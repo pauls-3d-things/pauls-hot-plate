@@ -18,9 +18,11 @@ This is a project to build a DIY PID controlled hotplate. This includes a python
 - 1x100k Thermistor (from my 3D printer)
 - 2x8pin female header
 - 3x2pin JST-XH 2.50mm
-- Code: see `software/`
+- Code: see `firmware/`
 
-## software
+## firmware
+
+Open the folder `firmware/` with Visual Studio Code and install recommended plugins. You can find VSC here: https://code.visualstudio.com
 
 The trickiest part was to get the temperature readings correct.
 I had the best results using the *Stein-Hart* model to obtain correct temperature readings (which only works above 40C, but as we want to solder somethings, this should be OK ;) ). If you are using a different setup, you will need to adapt the line in `main.cpp`, using values derived with this tool: https://www.thinksrs.com/downloads/programs/therm%20calc/ntccalibrator/ntccalculator.html
