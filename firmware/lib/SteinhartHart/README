@@ -1,0 +1,36 @@
+INTRODUCTION
+------------
+
+The Steinhart-Hart equation is the most widely used tool to interpolate 
+the NTC thermistor resistance/temperature curve. It is a third order
+polynomial which provides very good curve fitting.
+	
+	1/t = A + B * log(r) + C * log(r)^3
+	
+A, B and C are manufacturing coefficients for a certain temperature range.
+These can usually be found in the data sheet.  
+If you don't specify them this library will use the coefficients for the 
+most common type of NTC thermistor.
+Thermistor values denote their resistance at 25°C. A popular type would
+be an NTC 10K which would give roughly 10 kOhms at that temperature point.
+
+Although there are ways to calculate the coefficients yourself experimentally
+it might be cheaper and easier to just buy a thermistor with known specs.
+
+To get readings from a thermistor into your Arduino you will have to use
+a conventional voltage divider circuit.
+
+              ____         ____
+    +5 o-----|____|---+---|____|---o GND
+            NTC 10K   |     10K
+                      | 
+PIN A0 o--------------+
+
+
+INSTALLATION 
+------------
+For a tutorial on how to install new libraries for use with the Arduino
+development environment please refer to the following website:
+http://www.arduino.cc/en/Reference/Libraries
+
+
