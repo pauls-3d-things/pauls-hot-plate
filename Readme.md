@@ -24,9 +24,21 @@ This is a project to build a DIY PID controlled hotplate. This includes a python
 - 3x2pin JST-XH 2.50mm
 - Code: see `firmware/`
 
-## firmware
+## Firmware
+### Setup
+Skip part 1 or steps 1-3 if Visual Studio Code and the extension PlatformIO have been installed.
 
-Open the folder `firmware/` with Visual Studio Code and install recommended plugins. You can find VSC here: https://code.visualstudio.com
+PART 1
+1) Install [Visual Studio Code](https://code.visualstudio.com) and start the application. If you have any issues installing there is plenty of resources online for help.
+2) Follow this [official guide](https://docs.platformio.org/en/latest//integration/ide/vscode.html) or click on extenstions(Ctrl+Shift+X) located on the menu on the far left(the symbol looks like tetris). 
+3) Type in the search bar "PlatformIO IDE", an item with an alien as a logo should be appear. Click install, this is will take a few moments and VSC will need to be reloaded after the extension has been installed.
+
+PART 2
+
+3) Open PlatformIO, click the button at the footer menu(bottom left) that looks like a home. This navigates to PlatformIO Home.
+4) Click "Open Project" and navigate to the folder `firmware/` of this repo.
+5) Click the blue button "Open "firmware"" and wait for PlatformIO to configure the workspace.
+6) Plug in the ESP8266 OLED board and click the right arrow(→) button at the footer menu(bottom left). This will build and upload the firmware to the board.
 
 The trickiest part was to get the temperature readings correct.
 I had the best results using the *Stein-Hart* model to obtain correct temperature readings (which only works above 40C, but as we want to solder somethings, this should be OK ;) ). If you are using a different setup, you will need to adapt the line in `main.cpp`, using values derived with this tool: https://www.thinksrs.com/downloads/programs/therm%20calc/ntccalibrator/ntccalculator.html
@@ -48,7 +60,7 @@ void setupTempControl() {
 ```
 
 
-## hardware
+## Hardware
 
 The overall setup *could* look like this, the setup below is only for educational purposes:
 
